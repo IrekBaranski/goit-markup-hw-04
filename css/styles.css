@@ -77,13 +77,26 @@ p {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    /*border: 1px dotted blueviolet;*/
+    border: 1px dotted blueviolet;
+
+}
+.section__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: aquamarine;
+}
+.section #our-klient {
+    padding-bottom: 87px;
 }
 .container {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    /*border: 1px dashed goldenrod;*/
+    border: 1px dashed goldenrod;
 }
 .link {
     text-decoration: none;
@@ -93,7 +106,9 @@ p {
 .link:focus {color: var(--brand-color-blue);
 }
 
-
+.icon:hover {
+    fill: var(--brand-color-blue);
+}
 /* ----- ------------------------------ ----- */
 /* ----- header & menu global styles    ----- */
 /* ----- ------------------------------ ----- */
@@ -307,14 +322,7 @@ p {
     height: 294px;
     margin: 0px;
 }
-.gallery__name {
-   
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
+
 .section-team--bg-color {background-color: var(--second-bg-color-white);
 }
 .section-team__name {
@@ -367,6 +375,20 @@ p {
 
     color: var(--second-color-dark-grey);
 }
+.collection {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    list-style: none;
+}
+.collection__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--svg-color-lgrey);
+    border-radius: 4px;
+}
+.icon {fill: var(--svg-color-lgrey);}
 
 /* ----- ------------------------------ ----- */
 /* ----- portfolio page specyfic styles ----- */
