@@ -44,11 +44,9 @@ Po zatwierdzeniu zadania są do usunięcia. --- */
 }
 
 body {
-    height: auto;
-    width: 1600px;
-    display: flex;
-    flex-direction: column;
-
+    /*margin-left: auto;
+    margin-right: auto;*/
+    
     font-family: 'Roboto', sans-serif;
     color: var(--main-color-black);   
     background-color: var(--main-bg-color-white);      
@@ -78,7 +76,7 @@ p {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    /*border: 1px dashed goldenrod;*/    
+    /*border: 1px dashed goldenrod;*/
 }
 .link {
     text-decoration: none;
@@ -88,11 +86,43 @@ p {
 .link:focus {color: var(--brand-color-blue);
 }
 
+
+/* ----- ------------------------------ ----- */
+/* ----- header & menu global styles    ----- */
+/* ----- ------------------------------ ----- */
+
+.page-header {
+    background-color:var(--main-bg-color-white);
+    border-bottom: 1px solid var(--border-color-white2);
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px 4px 15px;
+    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+}
 /* ----- ------------------------------ ----- */
 /* ----- logotype styles:               ----- */
 /* ----- on light & dark background     ----- */
 /* ----- ------------------------------ ----- */
 
+.logo {
+   
+    /*border-radius: 10px;    
+    background-color: rgba(0, 255, 0, 0);*/
+    text-decoration: none;
+    margin-right: 97px;
+}
+.logo__link { 
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;    
+}
 .logotype{
     text-decoration: none;
     font-family: Raleway, Oleo Script, sans-serif;
@@ -105,63 +135,36 @@ p {
 .logotype--on-light-bg {color: var(--logotype-on-light-bg-black);}
 .logotype--on-dark-bg {color: var(--logotype-on-dark-bg-white);}
 
-/* ----- ------------------------------ ----- */
-/* ----- header & menu global styles    ----- */
-/* ----- ------------------------------ ----- */
-
-.header-menu {
-    width: 1600px;
-    background-color:var(--main-bg-color-white);
-    border-bottom: 1px solid var(--border-color-white2);
-}
-.menu {
-    display: flex;
-    align-items: center;
-    padding: 24px 0px 25px 15px;
-    
-    font-size: 14px;
-    font-weight: 500;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-}
-
 .nav {
-    margin-left: 93px;
-    margin-right: 371px;
-    /*border: 1px dashed gray;*/
+    /*padding: 10px;*/
+    display: flex;
+    flex: 1;
+    /*border-radius: 5px;
+    background-color:cadetblue;*/
 }
 .nav__items {
     display: flex;   
-    justify-content: space-between;
+    gap: 46px;
     
-    min-width: 254px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-
     list-style-type: none;
     color: var(--main-color-black); 
-    /*background-color: aqua;*/
 }
 .nav__link {
     text-decoration: none;
     cursor: pointer;
-    color: var(--main-color-black);
-    
+    color: var(--main-color-black); 
 }
 
 .contact {
-   /*border: 1px dashed gray;*/
+    display: flex;
+    padding: 10px; 
+        
+   /* border-radius: 5px;
+    background-color: aqua;*/
 }
 .contact__items {
     display: flex;   
-    justify-content: space-between;
-    min-width: 295px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-    
-    
+    gap: 50px; 
 
     list-style-type: none;
     color: var(--second-color-dark-grey);
@@ -177,7 +180,7 @@ p {
 /* ----- ------------------------------ ----- */
 
 .footer {
-    width: 1600px;
+    
     padding-top: 60px;
     padding-bottom: 60px;
     
@@ -409,20 +412,15 @@ p {
 .portfolio-cards {
     list-style-type:none;
     display: flex;
-    justify-content:center;
     flex-wrap: wrap;
+    justify-content:center;
     gap: 30px 30px; 
 
    /*background-color: brown;  */
 }
-.portfolio-card {
-    
-    width: 370px;
-    margin: 0px;   
-}
+.portfolio-card {flex-basis: calc((100% - 60px)/3);}
 .portfolio-card__caption {
     width: 370px;
-    margin: 0px;
     padding: 15px 24px 20px;
 
     border-left: 1px solid var(--border-color-white2);
