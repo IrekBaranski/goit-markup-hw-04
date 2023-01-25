@@ -40,7 +40,14 @@ Po zatwierdzeniu zadania są do usunięcia. --- */
     --dark-bg-color-black1: rgb(47, 48, 58);
 
     --border-color-white1: rgb(238, 238, 238);
-    --border-color-white2: rgb(236, 236, 236);   
+    --border-color-white2: rgb(236, 236, 236);
+    
+    /* ----- svg colors - bonus svg colors----- */
+    --svg-color-lgrey: hsl(227, 6%, 70%);
+    --svg-bg-color-black01: rgba(255, 255, 255, 0.1);
+
+    
+
 }
 
 body {
