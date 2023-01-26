@@ -19,8 +19,9 @@
   </head>
 
   <body>
-    
-    <!--Page header-->    
+    <!-- ----- ------------------------------------------------>
+    <!-- ----- page header - menu -----                      -->  
+       
     <header class="page-header">
         <div class="container menu">
             <!--LOGO on light background-->
@@ -45,10 +46,28 @@
             </nav>
             <div class="contact">
                     <ul class="contact__items">
-                        <li><a class="link contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+                        <li>
+                            <a class="link contact__link" href="mailto:info@devstudio.com">
+                                <svg class="contact__icon icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope">
+                                    </use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
                         </li>
-                        <li><a class="link contact__link" href="tel:+48111111111">+48 111 111 111</a>
+
+                        <li>
+                            <a class="link contact__link" href="tel:+48111111111">
+                                <svg class="contact__icon icon" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-smartphone">
+                                    </use>
+                                </svg>
+                                +48 111 111 111
+                            </a>
+
                         </li>
+
                     </ul>
                 
             </div> 
@@ -122,19 +141,58 @@
                 </ul>
             </section>
         </div>
-        <section class="section-team--bg-color section">
+
+        <!-- -------------------------------------------------------- -->
+        <!-- -----  section  - our team -                       ----- -->
+        <!-- -------------------------------------------------------- -->
+
+        <section class="section section-team--bg-color">
             <div class="container">
                 <h2 class="section__title">Nasz zespół</h2>
-                <ul class="team-cards">
+        
+                <!-- ----- team cards set - collection - ----- -->
+
+                <ul class="collection">
                     <li>
                         <figure class="team-card">
                             <img src="images/mainpage-team-product-designer.jpg" alt="portret uśmiechniety pan w okularach" 
-                            height="260"
-                            width="270"
+                            height="260" width="270"
                             >
+
                             <figcaption class="team-card__caption">
                                 <h3 class="team-card__name">John Doe</h3>
                                 <p class="team-card__description">Product Designer</p>
+
+                                <ul class="team-card__icons">
+                                    <li>
+                                        <a class="icon__link" href="#product-designer-instagram-link" > 
+                                            <svg class="icon" width="44" height="44" fill="#008000">
+                                                <use href="./images/symbol-defs.svg#icon-Logo-company-tagline2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="icon__link" href="#product-designer-twitter-link" > 
+                                            <svg class="icon" width="44" height="44">
+                                                <use href="./images/icons.svg#icon-Logo-company-tagline2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="icon__link" href="#product-designer-facebook-link" > 
+                                            <svg class="icon" width="44" height="44">
+                                                <use href="./images/icons.svg#icon-astronaut-1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="icon__link" href="#product-designer-linkedin-link" > 
+                                            <svg class="icon" width="44" height="44">
+                                                <use href="./images/icons.svg#icon-Ellipse-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                         </figcaption>
                         </figure>
                     </li>
@@ -177,6 +235,10 @@
                 </ul>
             </div>
         </section>
+
+    <!-- ----- ------------------ ------------------------------ -->    
+    <!-- ----- section our klient ------------------------------ -->
+
         <section id="our-klient" class="section">
             <div class="container">
                 <h2 class="section__title">Nasi klienci</h2>
@@ -184,7 +246,35 @@
                     <li>
                         <figure class="collection__item">
                             <svg class="icon" width="170" height="92">
-                                <use href="./images/icons-optimalized.svg#icon-Logo-company-tagline2"></use>
+                                <use href="./images/icons.svg#icon-antenna-1"></use>
+                            </svg>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="collection__item">
+                            <svg class="icon" width="170" height="92">
+                                <use href="./images/symbol-defs.svg#icon-antenna-1"></use>
+                            </svg>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="collection__item">
+                            <svg class="icon" width="170" height="92">
+                                <use href="./images/icons-optimalized.svg#icon-Logo-comapany"></use>
+                            </svg>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="collection__item">
+                            <svg class="icon" width="170" height="92">
+                                <use href="./images/icons-optimalized.svg#icon-Logo-foster-peters"></use>
+                            </svg>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="collection__item">
+                            <svg class="icon" width="170" height="92">
+                                <use href="./images/icons-optimalized.svg#icon-Logo-brand"></use>
                             </svg>
                         </figure>
                     </li>
@@ -195,40 +285,7 @@
                             </svg>
                         </figure>
                     </li>
-                    <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/icons-optimalized.svg#icon-Logo-company-tagline2"></use>
-                            </svg>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/icons-optimalized.svg#icon-Logo-company-tagline2"></use>
-                            </svg>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/icons-optimalized.svg#icon-Logo-company-tagline2"></use>
-                            </svg>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/icons-optimalized.svg#icon-Logo-company-tagline2"></use>
-                            </svg>
-                        </figure>
-                    </li>
-
-
                 </ul>
-
-
-
             </div>
         </section>
     </main>
