@@ -77,8 +77,6 @@ p {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    border: 1px dotted blueviolet;
-
 }
 .section__title {
     font-size: 36px;
@@ -96,7 +94,6 @@ p {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    border: 1px dashed goldenrod;
 }
 .link {
     text-decoration: none;
@@ -121,7 +118,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 15px 4px 15px;
+    padding: 25px 15px 24px 15px;
     
     font-size: 14px;
     font-weight: 500;
@@ -134,9 +131,6 @@ p {
 /* ----- ------------------------------ ----- */
 
 .logo {
-   
-    /*border-radius: 10px;    
-    background-color: rgba(0, 255, 0, 0);*/
     text-decoration: none;
     margin-right: 97px;
 }
@@ -179,10 +173,7 @@ p {
 
 .contact {
     display: flex;
-    padding: 10px; 
-        
-   /* border-radius: 5px;
-    background-color: aqua;*/
+    padding: 0px 10px;  
 }
 .contact__items {
     display: flex;   
