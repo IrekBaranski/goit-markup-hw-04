@@ -253,12 +253,26 @@ p {
 /* ----- ------------------------------ ----- */
 /* ----- main page specyfic styles      ----- */
 /* ----- ------------------------------ ----- */
-/* ----- section header, witout section, ----- */
+/* ----- section ./header, witout class section, ----- */
 
 .header__banner {
-    width: inherit;
+    /*width: 1600px;*/  
     height: 600px;
     background-color: var(--dark-bg-color-black1);
+    background-image: url(/images/heder-banner-opt-people-teams-at-work-.jpg), url(/images/Img\ Overlay.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+ 
+   /*przerobić to: display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/team.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    height: 600px; */;
 }
 .header__box {
     height: 600px;
