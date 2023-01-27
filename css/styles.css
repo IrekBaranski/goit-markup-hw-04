@@ -218,17 +218,24 @@ p {
 /* ----- footer styles: dark background ----- */
 /* ----- ------------------------------ ----- */
 
-.footer {
-    
+.section__footer {
     padding-top: 60px;
     padding-bottom: 60px;
     
     background-color: var(--dark-bg-color-black1);
 }
-.footer__box {
-    padding-left: 15px;
-    /*background-color: black;*/
+.container__footer {
+    padding-right: 15px;
+    display: flex;
+    align-content: flex-start;
+
+    background-color: gold; 
 }
+
+.container__address-block {
+    background-color: #008000;
+}
+
 .address__link--color { color: var(--second-color-dark-bg-white-06a);}
 
 .address__box {
@@ -248,6 +255,10 @@ p {
     
     color: var(--main-color-on-dark-bg-white); 
 }
+.footer__icons {
+    list-style-type: none;
+    display: flex;
+}
 
 
 /* ----- ------------------------------ ----- */
@@ -256,24 +267,17 @@ p {
 /* ----- section ./header, witout class section, ----- */
 
 .header__banner {
-    /*width: 1600px;*/  
+    
+    width: auto;
     height: 600px;
+    background-position:center;
+    
     background-color: var(--dark-bg-color-black1);
-    background-image: url(/images/heder-banner-opt-people-teams-at-work-.jpg), url(/images/Img\ Overlay.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/heder-banner-opt-people-teams-at-work-.jpg);
+    
     background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
- 
-   /*przerobić to: display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #2F303A;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/team.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1600px;
-    height: 600px; */;
-}
+    background-size: cover, 
+ }
 .header__box {
     height: 600px;
     display: flex;
