@@ -230,6 +230,7 @@ p {
 /* ----- ------------------------------ ----- */
 /* ----- main page specyfic styles      ----- */
 /* ----- ------------------------------ ----- */
+/* ----- section header, witout section, ----- */
 
 .header__banner {
     width: inherit;
@@ -270,15 +271,40 @@ p {
     cursor: pointer;
 }
 
-.feature {
+/* ----- ------------------------------ ----- */
+/* ----- section feature - content unknown ----- */
+/* ----- main block: section, __short-padding-bottom
+/* ----- nestest blocks: collection cont. icons, 
+/* ----- ------------------------------ ----- */
+
+.section__short-padding-bottom {
+    padding-bottom: 0px;
+}
+.gallery {
     display: flex;
     justify-content: center;
     column-gap: 30px;
     
     list-style: none; 
 }
-.feature__item {
+/* kandydat do skrócenie z innymi itemami colekcji*/ 
+.feature {
+    max-width: 270px;
+}
+.feature__icon-box {
     width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    
+    background-color: var(--second-bg-color-white);
+}
+.feature__icon {
+    display: inline-block;
+        
 }
 .feature__name {
     
