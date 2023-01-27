@@ -1,12 +1,4 @@
 /* ----- ------------------------------ ----- */
-/* ----- Duża uwaga robocza do całości! ----- */
-/* Klasy globalne, wydzielajace obszary na stronach, mają ustawione bordery robocze (wyróżniajace się kropki i kreski). 
-Nie usuwałem ponieważ pozwalają szybko określić rozmieszczeenie elelmentów. 
-Po zatwierdzeniu zadania są do usunięcia. --- */
-/* ----- ------------------------------ ----- */
-
-
-/* ----- ------------------------------ ----- */
 /* ----- setting global tags and styles ----- */
 /* ----- common to the entire page      ----- */
 /* ----- ------------------------------ ----- */
@@ -57,8 +49,8 @@ body {
     background-color: var(--main-bg-color-white);      
 }
 
+/* ----- ------------------------------ ----- */
 /* ----- tags- reset properties: ul, h  ----- */
-
 ul,
 li {
     margin-block: 0px;
@@ -181,16 +173,45 @@ p {
     padding: 0px 10px;  
 }
 .contact__items {
-    display: flex;   
-    gap: 50px; 
+    display: flex;
+    justify-content: center;   
+    gap: 30px; 
 
     list-style-type: none;
-    color: var(--second-color-dark-grey);
+   
 }
 .contact__link {
     text-decoration: none;
     cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+        
     color: var(--second-color-dark-grey);
+}
+.contact__icon-mail {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+    fill: var(--second-color-dark-grey);
+}
+.contact__icon-tel {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+
+    fill: var(--second-color-dark-grey);
+}
+.contact__link:hover,
+.contact__link:focus,
+.contact__icon-mail:hover,
+.contact__icon-mail:focus,
+.contact__icon-tel:hover,
+.contact__icon-tel:focus {
+    color: var(--brand-color-blue);
+    fill:var(--brand-color-blue);
 }
 
 /* ----- ------------------------------ ----- */
@@ -227,6 +248,8 @@ p {
     
     color: var(--main-color-on-dark-bg-white); 
 }
+
+
 /* ----- ------------------------------ ----- */
 /* ----- main page specyfic styles      ----- */
 /* ----- ------------------------------ ----- */
