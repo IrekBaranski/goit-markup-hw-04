@@ -391,27 +391,26 @@ p {
 }
 
 /* ----- ---------- ---------- ---------------------*/
-/* ----- section our client contain below ---- -----*/
+/* ----- section our team contain below ---- -----*/
 /* ----- figure caption, icons list, links ----- ----- -----*/
 
-.section-team--bg-color {background-color: var(--second-bg-color-white);
+.section--color-bg {background-color: var(--second-bg-color-white);
 }
-.section-team__name {
+.section__header {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
     padding-bottom: 50px;   
-    
-    /*border: 1px dashed grey;*/
 }
-.collection {
+.section__list {
+    list-style-type: none;
+}
+.team-card__set {
     display: flex;
     justify-content: center;
     gap: 30px;
-
-    list-style-type: none;
 }
 
 /* ----- team card -> figure contain personalized card with: img, name, description, social media links, icons ----*/
@@ -425,22 +424,23 @@ p {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.team-card__caption{
+.team-card__body{
     width: auto;
     height: auto;
-    padding: 30px 0px;
+    padding: 30px 32px;
     
     background-color: lightgreen;
         
 }
-.team-card__name {
-    /*font-family: Roboto;*/
+.team-card__title {
+    padding-bottom: 10px;
+
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-bottom: 10px;    
+        
 }
 .team-card__description {
     font-size: 16px;
@@ -450,23 +450,46 @@ p {
 
     color: var(--second-color-dark-grey);
 }
-.team-card__icons {
+.team-card__icons-set {
+    margin-top: 16px;
+    
     display: flex;
     justify-content: center;
     align-content: center;
     column-gap: 10px;
-    margin-top: 16px;
     list-style: none;
-    width: 48px;
-    height: 48px;
-    fill:#008000;
-    background-color: beige;
+    background-color: chartreuse;
+   
+}
+.team-card__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--main-bg-color-white)
+    
 }
 .icon__link {
     text-decoration: none;
-    padding: 0px;
     cursor: pointer;
+    padding: 0px;
 }
+.icon__team-card{
+    
+    fill: var(--svg-color-lgrey);
+}
+
+.icon__team-card:hover,
+.team-card__icon:hover {
+    fill: var(--main-bg-color-white);
+    background-color: var(--brand-color-blue);
+}
+
 
 /* ----- ----- ----- ----- ----- -----*/
 /* ----- section our client contain below ---- -----*/
