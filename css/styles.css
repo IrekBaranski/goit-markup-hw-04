@@ -99,43 +99,19 @@ p {
 .icon:hover {
     fill: var(--brand-color-blue);
 }
-/* ----- ------------------------------ ----- */
-/* ----- header & menu global styles    ----- */
-/* ----- ------------------------------ ----- */
 
-.page-header {
-    background-color:var(--main-bg-color-white);
-    border-bottom: 1px solid var(--border-color-white2);
-}
-.menu {
-    height: 79px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
-    
-    font-size: 14px;
-    font-weight: 500;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-}
-
-/* ----- ------------------------------ ----- */
-/* ----- logotype styles:               ----- */
-/* ----- on light & dark background     ----- */
-/* ----- ------------------------------ ----- */
-
-.logo {
-    text-decoration: none;
-    margin-right: 97px;
-}
 .logo__link { 
     display: inline-block;
     text-decoration: none;
     cursor: pointer;    
 }
+
+/* ----- ------------------------------ ----- */
+/* ----- Logo WebStudio - ready to use
+/* ----- logotype styles: on light & dark background
+/* ----- ------------------------------ ----- */
+
 .logotype{
     text-decoration: none;
     font-family: Raleway, Oleo Script, sans-serif;
@@ -148,47 +124,77 @@ p {
 .logotype--on-light-bg {color: var(--logotype-on-light-bg-black);}
 .logotype--on-dark-bg {color: var(--logotype-on-dark-bg-white);}
 
-.nav {
-    /*padding: 10px;*/
+
+/* ----- ------------------------------ ----- */
+/* ----- header & menu global styles    ----- */
+/* ----- ------------------------------ ----- */
+
+.page-header {
+    background-color:var(--main-bg-color-white);
+    border-bottom: 1px solid var(--border-color-white2);
+}
+.menu {
+    height: 79px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+}
+
+.menu__logo {
+    margin-right: 97px;
+}
+
+.menu__nav {
     display: flex;
     flex: 1;
-    /*border-radius: 5px;
-    background-color:cadetblue;*/
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+   
 }
-.nav__items {
+.menu__nav-items {
     display: flex;   
     gap: 46px;
     
     list-style-type: none;
     color: var(--main-color-black); 
 }
-.nav__link {
+.menu__nav-item {
     text-decoration: none;
     cursor: pointer;
     color: var(--main-color-black); 
 }
 
-.contact {
+.menu__contact {
     display: flex;
     padding: 0px 10px;  
 }
-.contact__items {
+.menu__contact-items {
     display: flex;
     justify-content: center;   
     gap: 30px; 
 
     list-style-type: none;
-   
 }
-.contact__link {
-    text-decoration: none;
-    cursor: pointer;
+.menu__contact-item {
     display: inline-flex;
     justify-content: center;
-        
+    
+    text-decoration: none;
+    cursor: pointer;    
     color: var(--second-color-dark-grey);
 }
-.contact__icon-mail {
+.menu__contact-icon-mail {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -218,13 +224,13 @@ p {
 /* ----- footer styles: dark background ----- */
 /* ----- ------------------------------ ----- */
 
-.section__footer {
+.section__short-padding--bg-dark {
     padding-top: 60px;
     padding-bottom: 60px;
     
     background-color: var(--dark-bg-color-black1);
 }
-.container__footer {
+.container__ {
     padding-right: 15px;
     display: flex;
     align-content: flex-start;
@@ -273,7 +279,7 @@ p {
     background-position:center;
     
     background-color: var(--dark-bg-color-black1);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/heder-banner-opt-people-teams-at-work-.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.4)), url(/images/heder-banner-opt-people-teams-at-work-.jpg);
     
     background-repeat: no-repeat, no-repeat;
     background-size: cover, 
