@@ -96,23 +96,21 @@ p {
 .link:focus {color: var(--brand-color-blue);
 }
 
+.icon {display: inline-block;}
+
+.icon:focus,
 .icon:hover {
     fill: var(--brand-color-blue);
-}
-
-
-.logo__link { 
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;    
 }
 
 /* ----- ------------------------------ ----- */
 /* ----- Logo WebStudio - ready to use
 /* ----- logotype styles: on light & dark background
 /* ----- ------------------------------ ----- */
-
-.logotype{
+.logo { 
+    display: inline-block;  
+}
+.logo__logotype{
     text-decoration: none;
     font-family: Raleway, Oleo Script, sans-serif;
     font-size: 26px;
@@ -120,9 +118,9 @@ p {
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
-.logotype--brand-color {color: var(--brand-color-blue);}
-.logotype--on-light-bg {color: var(--logotype-on-light-bg-black);}
-.logotype--on-dark-bg {color: var(--logotype-on-dark-bg-white);}
+.logo__logotype--brand-color {color: var(--brand-color-blue);}
+.logo__logotype--on-light-bg {color: var(--logotype-on-light-bg-black);}
+.logo__logotype--on-dark-bg {color: var(--logotype-on-dark-bg-white);}
 
 
 /* ----- ------------------------------ ----- */
@@ -202,7 +200,7 @@ p {
 
     fill: var(--second-color-dark-grey);
 }
-.contact__icon-tel {
+.menu__contact-icon-tel {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -459,25 +457,15 @@ p {
     column-gap: 10px;
     margin-top: 16px;
     list-style: none;
-
+    width: 48px;
+    height: 48px;
+    fill:#008000;
     background-color: beige;
 }
 .icon__link {
     text-decoration: none;
     padding: 0px;
     cursor: pointer;
-}
-.icon {
-    display: inline-block;
-  width: 48px;
-  height: 48px;
-  fill:#008000;
-  
-}
-
-.icon:hover {
-    fill:aqua;
-    background-color: brown;
 }
 
 /* ----- ----- ----- ----- ----- -----*/
