@@ -582,16 +582,17 @@ p {
 
 
 /* ----- ------------------------------ ----- */
-/* ----- portfolio page specyfic styles ----- */
+/* ----- SITE PORTFOLIO ----- ----- */
+/*specyfic styles ----- */
 /* ----- ------------------------------ ----- */
 
-.portfolio-gallery {
+/*.portfolio-gallery {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color-black);
     background-color: var(--main-bg-color-white);
-}
+}*/
 
-.portfolio__filter {
+.button__list {
     list-style-type: none;
     padding-inline-start: 0px;
     
@@ -601,12 +602,14 @@ p {
     padding-bottom: 50px;
     
 }
-.portfolio__filter-btn{
+.button {
     
     border-style: none;
     border-radius: 4px;
     padding: 6px 22px;
-    
+    background-color: var(--second-bg-color-white);
+}
+.button__text {
     text-align: center;
 
     font-family: 'Roboto', sans-serif;
@@ -616,20 +619,33 @@ p {
     letter-spacing: 0.03em;
 
     color: var(--main-color-black);
-    background-color: var(--second-bg-color-white);
     cursor: pointer;
 }
-.portfolio__filter-btn:hover,
-.portfolio__filter-btn:focus {
+.button:hover,
+.button:focus,
+.button:active {
     
     background-color: var(--brand-color-blue);
     color: var(--main-color-on-dark-bg-white);
+    
     /* shadow-middle */
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     
-
 }
-.portfolio-cards {
+
+/* ----- ---------- ---------- ----- */
+/* ----- Portfolio cards spec styles ----- */
+/* ----- flex wrap 3/row */
+
+.portfolio-card {flex-basis: calc((100% - 60px)/3);}
+
+.portfolio-card:hover,
+.portfolio-card:focus,
+.portfolio-card:active {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card__list{
     list-style-type:none;
     display: flex;
     flex-wrap: wrap;
@@ -638,7 +654,12 @@ p {
 
    /*background-color: brown;  */
 }
-.portfolio-card {flex-basis: calc((100% - 60px)/3);}
+
+.portfolio-card__img {
+    display: block;
+    width: auto;
+    height: 294px;
+}
 .portfolio-card__caption {
     width: 370px;
     padding: 15px 24px 20px;
