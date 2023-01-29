@@ -222,22 +222,31 @@ p {
 /* ----- footer styles: dark background ----- */
 /* ----- ------------------------------ ----- */
 
-.section__short-padding--bg-dark {
+.section__footer {
     padding-top: 60px;
     padding-bottom: 60px;
     
     background-color: var(--dark-bg-color-black1);
 }
-.container__ {
+.footer {
     padding-right: 15px;
     display: flex;
     align-content: flex-start;
+    column-gap: 70px;
 
     background-color: gold; 
 }
 
-.container__address-block {
-    background-color: #008000;
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    row-gap: 20px; 
+    
+
+    
+
 }
 
 .address__link--color { color: var(--second-color-dark-bg-white-06a);}
@@ -424,6 +433,11 @@ p {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.team-card__img {
+    width: 270px;
+    height: 260px;
+    margin: 0px;
+}
 .team-card__body{
     width: auto;
     height: auto;
@@ -432,14 +446,13 @@ p {
     background-color: lightgreen;
         
 }
-.team-card__title {
-    padding-bottom: 10px;
-
+.team-card__name {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 10px;
         
 }
 .team-card__description {
@@ -447,12 +460,12 @@ p {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 16px;
 
     color: var(--second-color-dark-grey);
 }
-.team-card__icons-set {
-    margin-top: 16px;
-    
+.team-card__icons-list {
+      
     display: flex;
     justify-content: center;
     align-content: center;
@@ -461,7 +474,7 @@ p {
     background-color: chartreuse;
    
 }
-.team-card__icon {
+.team-card__icon-bg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -471,23 +484,18 @@ p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: var(--main-bg-color-white)
-    
-}
-.icon__link {
-    text-decoration: none;
-    cursor: pointer;
-    padding: 0px;
-}
-.icon__team-card{
-    
+    background-color: var(--main-bg-color-white);
     fill: var(--svg-color-lgrey);
 }
-.team-card__icon:hover icon__team-card {
-    
+
+.team-card__icon{
+    display: inline-block;    
+    fill: inherit;
+}
+
+.team-card__icon-bg:hover{
     fill: var(--main-bg-color-white);
     background-color: var(--brand-color-blue);
-    
 }
 
 
