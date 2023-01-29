@@ -80,9 +80,7 @@ p {
     padding-bottom: 50px;
     background-color: aquamarine;
 }
-.section #our-klient {
-    padding-bottom: 87px;
-}
+
 .container {
     width: 1200px;
     margin-right: auto;
@@ -96,12 +94,14 @@ p {
 .link:focus {color: var(--brand-color-blue);
 }
 
+/* - to nie działa poprawnie
 .icon {display: inline-block;}
 
 .icon:focus,
 .icon:hover {
     fill: var(--brand-color-blue);
 }
+*/
 
 /* ----- ------------------------------ ----- */
 /* ----- Logo WebStudio - ready to use
@@ -191,6 +191,7 @@ p {
     text-decoration: none;
     cursor: pointer;    
     color: var(--second-color-dark-grey);
+    fill: var(--second-color-dark-grey);
 }
 .menu__contact-icon-mail {
     display: inline-block;
@@ -198,7 +199,8 @@ p {
     height: 16px;
     margin-right: 10px;
 
-    fill: var(--second-color-dark-grey);
+    fill: inherit; 
+    /*var(--second-color-dark-grey);*/
 }
 .menu__contact-icon-tel {
     display: inline-block;
@@ -206,14 +208,15 @@ p {
     height: 16px;
     margin-right: 7px;
 
-    fill: var(--second-color-dark-grey);
+    fill: inherit; 
+    /*var(--second-color-dark-grey);*/
 }
-.contact__link:hover,
-.contact__link:focus,
-.contact__icon-mail:hover,
-.contact__icon-mail:focus,
-.contact__icon-tel:hover,
-.contact__icon-tel:focus {
+.menu__contact-item:hover,
+.menu__contact-item:focus,
+.menu__contact-icon-mail:hover,
+.menu__contact-icon-mail:focus,
+.menu__contact-icon-tel:hover,
+.menu__contact-icon-tel:focus {
     color: var(--brand-color-blue);
     fill:var(--brand-color-blue);
 }
