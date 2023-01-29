@@ -483,11 +483,11 @@ p {
     
     fill: var(--svg-color-lgrey);
 }
-
-.icon__team-card:hover,
-.team-card__icon:hover {
+.team-card__icon:hover icon__team-card {
+    
     fill: var(--main-bg-color-white);
     background-color: var(--brand-color-blue);
+    
 }
 
 
