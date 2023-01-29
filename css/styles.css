@@ -234,28 +234,25 @@ p {
     align-content: flex-start;
     column-gap: 70px;
 
-    background-color: gold; 
+   /* background-color: gold; */
 }
 
 .footer__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: flex-start;
+    align-items: stretch;
     row-gap: 20px; 
-    
-
-    
-
 }
+
+/* ----- 1st footer item - logo + address box ----- */
 
 .address__link--color { color: var(--second-color-dark-bg-white-06a);}
 
 .address__box {
     text-decoration: none;
     height: 81px;
-    margin-top: 20px;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -268,9 +265,59 @@ p {
     
     color: var(--main-color-on-dark-bg-white); 
 }
+
+/* ----- 2nd footer item - label + social media icons list  --*/
+
+.footer__label {
+    margin-top: 12px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14)px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-color-on-dark-bg-white);
+}
+
 .footer__icons {
     list-style-type: none;
     display: flex;
+}
+
+.footer__icons-list {
+      
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 10px;
+    list-style: none;
+    /*background-color: chartreuse;*/
+   
+}
+.footer__icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--svg-bg-color-black01);
+    fill: var(--main-color-on-dark-bg-white);
+}
+
+.footer__icon{
+    display: inline-block;    
+    fill: inherit;
+}
+
+.footer__icon-bg:hover{
+    fill: var(--main-bg-color-white);
+    background-color: var(--brand-color-blue);
 }
 
 
@@ -453,7 +500,7 @@ p {
     margin: 0px;
     padding: 30px 32px;
     
-    background-color: lightgreen;
+    /*background-color: lightgreen;*/
         
 }
 .team-card__name {
@@ -474,6 +521,9 @@ p {
 
     color: var(--second-color-dark-grey);
 }
+
+/* ----- def social media icons - ---- */
+
 .team-card__icons-list {
       
     display: flex;
@@ -481,7 +531,7 @@ p {
     align-content: center;
     column-gap: 10px;
     list-style: none;
-    background-color: chartreuse;
+    /*background-color: chartreuse;*/
    
 }
 .team-card__icon-bg {
