@@ -401,9 +401,17 @@ p {
 
 /* ----- ---------- ---------- ---------------------*/
 /* ----- section our team contain below ---- -----*/
-/* ----- figure caption, icons list, links ----- ----- -----*/
+/* ----- .section--color-bg, figure caption, icons list, links ----- ----- -----*/
 
-.section--color-bg {background-color: var(--second-bg-color-white);
+.section--color-bg {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--second-bg-color-white);
+    background-position: 50% 50%;
+    background-repeat: repeat;
+    background-size:cover;
+    background-position-x: center;
+    
 }
 .section__header {
     font-size: 36px;
@@ -434,13 +442,15 @@ p {
     border-radius: 0px 0px 4px 4px;
 }
 .team-card__img {
-    width: 270px;
+    display: block;
+    width: auto;
     height: 260px;
-    margin: 0px;
 }
+
 .team-card__body{
     width: auto;
     height: auto;
+    margin: 0px;
     padding: 30px 32px;
     
     background-color: lightgreen;
