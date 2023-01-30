@@ -71,16 +71,19 @@ p {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section__title {
+.section__header {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
     padding-bottom: 50px;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
 }
 
+.section__list {
+    list-style-type: none;
+}
 .container {
     width: 1200px;
     margin-right: auto;
@@ -376,26 +379,27 @@ p {
 }
 
 /* ----- ------------------------------ ----- */
-/* ----- section feature - content unknown ----- */
-/* ----- main block: section, __short-padding-bottom
-/* ----- nestest blocks: collection cont. icons, 
-/* ----- ------------------------------ ----- */
+/* ----- FEATURE SECTION - content article--- */
+/* ----- section, __short-padding-bottom
+/* ----- article __img, __header icon __text 
+/* ----- !!! WYMAGA POPRAWY ---------------- ----- */
 
 .section__short-padding-bottom {
     padding-bottom: 0px;
 }
-.gallery {
+.articles__list {
     display: flex;
     justify-content: center;
     column-gap: 30px;
     
     list-style: none; 
 }
-/* kandydat do skrócenie z innymi itemami colekcji*/ 
-.feature {
+
+.article {
     max-width: 270px;
+    /*background-color: coral;*/
 }
-.feature__icon-box {
+.article__figure {
     width: 270px;
     height: 120px;
     display: flex;
@@ -406,11 +410,12 @@ p {
     
     background-color: var(--second-bg-color-white);
 }
-.feature__icon {
-    display: inline-block;
-        
+.article__icon {
+    display: block;
+    width: 65px;
+    height: 70px;      
 }
-.feature__name {
+.article__title {
     
     font-size: 14px;
     font-weight: 700;
@@ -420,7 +425,7 @@ p {
 
     margin-bottom: 10px;
 }
-.feature__description { 
+.article__copy { 
     height: 75px;
 
     font-size: 14px;
@@ -431,12 +436,11 @@ p {
     color: var(--second-color-dark-grey);
 }
 
-.section--short-padding-top {
-    padding-top: 50px;
-    padding-bottom: 94px;
-    /*border: 1px dotted blue;*/
-}
-.gallery {
+/* ----- ---------- -----*/
+/* ----- ACTIVITY SECTION ----- */
+
+
+.gallery__list {
     list-style-type: none;
 
     display: flex;
@@ -463,17 +467,7 @@ p {
     background-position-x: center;
     
 }
-.section__header {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding-bottom: 50px;   
-}
-.section__list {
-    list-style-type: none;
-}
+
 .team-card__set {
     display: flex;
     justify-content: center;
@@ -566,18 +560,39 @@ p {
 /* ----- section our client contain below ---- -----*/
 /* ----- figure caption, icons list, links ----- ----- -----*/
 
-.collection {
+.client__list {
     display: flex;
     justify-content: center;
     gap: 30px;
 
     list-style-type: none;
 }
-.collection__item {
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--svg-color-lgrey);
+.client__item {
+    width: 168px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 4px;
+    border: 1px solid var(--svg-color-lgrey);
+
+    fill: var(--svg-color-lgrey);
+    
+}
+
+.client__icon{
+    display: block;
+    width: 100px;
+    height: 60px;
+    fill: inherit;
+}
+
+.client__item:hover,
+.client__item:focus {
+    fill: var(--brand-color-blue);
+    border-color: var(--brand-color-blue);
+    
 }
 
 

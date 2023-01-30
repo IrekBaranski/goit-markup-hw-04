@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    
+
     <!-- ----- ------------------------------------------------>
     <!-- ----- PAGE HEADER - MENU -----                      -->
     <!-- ----- same on both sites ------------------------------------------->  
@@ -87,7 +87,7 @@
     </header>
     
     <!-- -------------------------------------------------------- -->
-    <!-- main page : section ----- -->
+    <!-- MAIN PAGE SECTION - HEADER ----- -->
     <!-- -------------------------------------------------------- -->
     <main>
         <header class="header__banner">
@@ -98,66 +98,105 @@
                 </div>
             </div>               
         </header>
-               
+        
+    <!-- -------------------------------------------------------- -->
+    <!-- FEATURE ARTICLES  ----- -->
+    <!-- -------------------------------------------------------- -->
         <section id="fetures" class="section section__short-padding-bottom">
             <div class="container">
-                <ul class="gallery">
-                    <li class="feature">
-                        <div class="feature__icon-box">
-                            <svg class="feature__icon " width="65" height="70">
-                                <use href="./images/icons.svg#icon-antenna-1">
-                                </use>
-                            </svg>
+                <ul class="articles__list">
+                    
+                <!-- ---- 1st article - antenna icon ----- -->
+                    <li >
+                        <div class="article">
+                            <figure class="article__figure">
+                                <svg class="article__icon" 
+                                width="65" 
+                                height="70"
+                                >
+                                    <use href="./images/icons.svg#icon-antenna-1">
+                                    </use>
+                                </svg>
+                            </figure>
+                            <figcaption class="article__body">
+                                <h4 class="article__title">LOREM IPSUM</h4>
+                                <p class="article__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                                </p>
+                                </figcaption>
                         </div>
-                        <h4 class="feature__name">LOREM IPSUM</h4>
-                        <p class="feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                        </p>
                     </li>
-                    <li class="feature">
-                        <div class="feature__icon-box">
-                            <svg class="feature__icon " width="65" height="70">
-                                <use href="./images/icons.svg#icon-clock-1">
-                                </use>
-                            </svg>
+
+                <!-- ---- 2nd article - clock icon ----- -->
+                    <li>
+                        <div class="article">
+                            <figure class="article__figure">
+                                <svg class="article__icon" 
+                                width="65" 
+                                height="70"
+                                >
+                                    <use href="./images/icons.svg#icon-clock-1">
+                                    </use>
+                                </svg>
+                            </figure>
+                            <figcaption class="article__body">
+                                <h4 class="article__title">LOREM IPSUM</h4>
+                                <p class="article__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                                </p>
+                            </figcaption>
                         </div>
-                        <h4 class="feature__name">LOREM IPSUM</h4>
-                        <p class="feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                        </p>
                     </li>
-                    <li class="feature">
-                        <div class="feature__icon-box">
-                            <svg class="feature__icon " width="65" height="70">
-                                <use href="./images/icons.svg#icon-diagram-1">
-                                </use>
-                            </svg>
+
+                <!-- ---- 3rd article - diagram icon ----- -->
+                    <li>
+                        <div class="article">
+                            <figure class="article__figure">
+                                <svg class="article__icon" 
+                                width="65" 
+                                height="70"
+                                >
+                                    <use href="./images/icons.svg#icon-diagram-1">
+                                    </use>
+                                </svg>
+                            </figure>
+                            <figcaption class="article__body">
+                                <h4 class="article__title">LOREM IPSUM</h4>
+                                <p class="article__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                                </p>
+                            </figcaption>
                         </div>
-                        <h4 class="feature__name">LOREM IPSUM</h4>
-                        <p class="feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                        </p>
                     </li>
-                    <li class="feature">
-                        <div class="feature__icon-box">
-                            <svg class="feature__icon " width="65" height="70">
-                                <use href="./images/icons.svg#icon-astronaut-1">
-                                </use>
-                            </svg>
+
+                <!-- ---- 4th article - astronault icon ----- -->
+                    <li>
+                        <div class="article">
+                            <figure class="article__figure">
+                                <svg class="article__icon" 
+                                width="65" 
+                                height="70"
+                                >
+                                    <use href="./images/icons.svg#icon-astronaut-1">
+                                    </use>
+                                </svg>
+                            </figure>
+                            <figcaption class="article__body">
+                                <h4 class="article__title">LOREM IPSUM</h4>
+                                <p class="article__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                                </p>
+                            </figcaption>
                         </div>
-                        <h4 class="feature__name">LOREM IPSUM</h4>
-                        <p class="feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                        </p>
                     </li>
                 </ul>
             </div>
         </section> 
 
         <!-- -------------------------------------------------------- -->
-        <!-- section  - activity - short gallery without description                     ----- -->
+        <!-- ----- ACTIVITY SECTION - short gallery without description                -->
         <!-- -------------------------------------------------------- -->
 
         <section id="activity" class="section">
             <div class="container">
-                <h2 class="section__title">Czym się zajmujemy</h2>
-                <ul class="gallery">
+                <h2 class="section__header">Czym się zajmujemy</h2>
+                <ul class="gallery__list">
                     <li>
                         <figure class="gallery__item">
                         <img src="images/mainpage-what-we-do-close-up-image-programer-working-his-desk-office_1098-18707.jpg" alt="programista pracujący w swoim biurze przy biurku."
@@ -188,7 +227,7 @@
         </section>
 
         <!-- -------------------------------------------------------- -->
-        <!-- -----  section  - our team -                       ----- -->
+        <!-- -----  section  - our team - background color dark white             ----- -->
         <!-- -------------------------------------------------------- -->
 
         <section class="section section--color-bg">
@@ -448,52 +487,64 @@
         </section>
 
     <!-- ----- ------------------ ------------------------------ -->    
-    <!-- ----- section - our clients - short gallery without description, --- -->
-    <!-- nested icons, links------------------------------ -->
+    <!-- ----- OUR CLIENTS SECTION ----------------- -->
+    <!-- nested icons, links without description------------------------------ -->
 
         <section id="our-client" class="section">
             <div class="container">
-                <h2 class="section__title">Nasi klienci</h2>
-                <ul class="collection">
+                <h2 class="section__header">Nasi klienci</h2>
+                <ul class="section__list client__list">
+                    
+                <!-- ----- 1st client icon----- -->
                     <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/icons.svg#icon-antenna-1"></use>
+                        <figure class="client__item">
+                            <svg class="client__icon" width="170" height="92">
+                                <use href="./images/icons.svg#icon-client1-yaco-company"></use>
                             </svg>
                         </figure>
                     </li>
+
+                <!-- ----- 2nd client icon----- -->
                     <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/symbol-defs.svg#icon-antenna-1"></use>
+                        <figure class="client__item">
+                            <svg class="client__icon" width="170" height="92">
+                                <use href="./images/icons.svg#icon-client2-tagline1-company"></use>
                             </svg>
                         </figure>
                     </li>
+
+                <!-- ----- 3rd client icon----- -->
                     <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/icons-optimalized.svg#icon-Logo-comapany"></use>
+                        <figure class="client__item">
+                            <svg class="client__icon" width="170" height="92">
+                                <use href="./images/icons.svg#icon-client3-company-company"></use>
                             </svg>
                         </figure>
                     </li>
+
+                <!-- ----- 4th client icon----- -->
                     <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/icons-optimalized.svg#icon-Logo-foster-peters"></use>
+                        <figure class="client__item">
+                            <svg class="client__icon" width="170" height="92">
+                                <use href="./images/icons.svg#icon-client4-foster-peters-company"></use>
                             </svg>
                         </figure>
                     </li>
+
+                <!-- ----- 5th client icon----- -->
                     <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/icons-optimalized.svg#icon-Logo-brand"></use>
+                        <figure class="client__item">
+                            <svg class="client__icon" width="170" height="92">
+                                <use href="./images/icons.svg#icon-client5-brand-company"></use>
                             </svg>
                         </figure>
                     </li>
+
+                <!-- ----- 6th client icon----- -->
                     <li>
-                        <figure class="collection__item">
-                            <svg class="icon" width="170" height="92">
-                                <use href="./images/icons-optimalized.svg#icon-Logo-company-tagline2"></use>
+                        <figure class="client__item">
+                            <svg class="client__icon" width="170" height="92">
+                                <use href="./images/icons.svg#icon-client6-tagline-company"></use>
                             </svg>
                         </figure>
                     </li>
