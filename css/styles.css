@@ -692,7 +692,7 @@ p {
     line-height: 2;
     letter-spacing: 0.06em;
     text-align: left;
-    color: var(--primary-color);
+    color: var(--main-color-black);
     margin-bottom: 4px;
 }
 .portfolio-card__label {
