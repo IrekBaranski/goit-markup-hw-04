@@ -1,637 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" >
-    <meta name="description" content="Nauka podstaw HTML5, grupa HTML+CSS PL ON 11, zadanie domowe nr 3, autor: Ireneusz Barański" >
-    <title>WebStudio- main page</title>
-
-    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="grupa HTML CSS.Poland 2.0, zadanie HW-01 autor: Ireneusz Barański">
+    
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    <!--
-    <style> 
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap'); 
-    </style>
-    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+    <!-- normalize-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>WebStudio-main page</title>
   </head>
 
   <body>
-
-    <!-- ----- ------------------------------------------------>
-    <!-- ----- PAGE HEADER - MENU -----                      -->
-    <!-- ----- same on both sites ------------------------------------------->  
-    <header class="page-header container">
-        <div class="menu">
-            
-            <div class="menu__logo logo">
-                <a class="logo__logotype link" href="./index.html" >
-                    <span class="logo__logotype logo__logotype--brand-color">Web</span>
-                    <span class="logo__logotype logo__logotype--on-light-bg">Studio</span>
+    <!-- section page-header control margin, padding-->
+    <header class="header-section">
+        <div class="container">
+            <!-- company logo ="logo", logotype desc. logo letters, background -->
+            <div class="header-section__logo">
+                <a class="logo link" href="./index.html">Web<span class="logo--dark-theme">Studio</span>
                 </a>
             </div>
-    
-    <!-- ----- ------------------------------------------------>
-        <!-- 2nd menu item - navigation -->
-            <!-- ------------------------------------>
-            <nav class="menu__nav">
-                <ul class="menu__nav-items">
+            <!-- manu nav  -->
+            <nav class="nav header-section__nav">
+                <ul class="nav__items">
                     <li>
-                        <a class="menu__nav-item link" href="./index.html">Agencja</a>
+                        <a class="link" href="./index.html">Studio</a>
                     </li>
                     <li>
-                        <a class="menu__nav-item link" href="./portfolio.html">Portfolio</a>
+                        <a class="link" href="">Portfolio</a>
                     </li>
                     <li>
-                        <a class="menu__nav-item link" href="#/">Kontakt</a>
+                        <a class="link" href="">Contacts</a>
                     </li>
                 </ul>
             </nav>
-    
-    <!-- ----- ------------------------------------------------>
-        <!-- 3rd menu item - contact links -->
-            <!-- ------------------------------------>
+            <address class="address header-section__address">
+                <ul class="address__items">
+                    <li>
+                        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
 
-            <div class="menu__contact">
-                    <ul class="menu__contact-items">
-                        <li>
-                            <a class="menu__contact-item link" 
-                            href="mailto:info@devstudio.com">
-                                <svg class="menu__contact-icon-mail " 
-                                width="16" 
-                                height="12">
-                                    <use href="./images/icons.svg#icon-envelope">
-                                    </use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </li>
+                    <li>
+                        <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
 
-                        <li>
-                            <a class="menu__contact-item link" href="tel:+48111111111">
-                                <svg class="menu__contact-icon-tel " width="10" height="16">
-                                    <use href="./images/icons.svg#icon-smartphone">
-                                    </use>
-                                </svg>
-                                +48 111 111 111
-                            </a>
-
-                        </li>
-
-                    </ul>
-                
-            </div> 
-        </div>             
+                </ul>
+            </address>
+        </div>         
     </header>
-    
-    <!-- -------------------------------------------------------- -->
-    <!-- MAIN PAGE SECTION - HEADER ----- -->
-    <!-- -------------------------------------------------------- -->
+
     <main>
-        <header class="header__banner">
+        <!-- 1st section - order -->
+        <section class="entry-section" >
             <div class="container">
-                <div class="header__box">
-                    <h1 class="header__slogan">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU </h1>
-                    <button class="header__button" type="button" >Zamów usługe</button>
-                </div>
-            </div>               
-        </header>
-        
-    <!-- -------------------------------------------------------- -->
-    <!-- FEATURE ARTICLES  ----- -->
-    <!-- -------------------------------------------------------- -->
-        <section id="fetures" class="section section__short-padding-bottom">
-            <div class="container">
-                <ul class="articles__list">
-                    
-                <!-- ---- 1st article - antenna icon ----- -->
-                    <li >
-                        <div class="article">
-                            <figure class="article__figure">
-                                <svg class="article__icon" 
-                                width="65" 
-                                height="70"
-                                >
-                                    <use href="./images/icons.svg#icon-antenna-1">
-                                    </use>
-                                </svg>
-                            </figure>
-                            <figcaption class="article__body">
-                                <h4 class="article__title">LOREM IPSUM</h4>
-                                <p class="article__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                                </p>
-                                </figcaption>
-                        </div>
-                    </li>
-
-                <!-- ---- 2nd article - clock icon ----- -->
-                    <li>
-                        <div class="article">
-                            <figure class="article__figure">
-                                <svg class="article__icon" 
-                                width="65" 
-                                height="70"
-                                >
-                                    <use href="./images/icons.svg#icon-clock-1">
-                                    </use>
-                                </svg>
-                            </figure>
-                            <figcaption class="article__body">
-                                <h4 class="article__title">LOREM IPSUM</h4>
-                                <p class="article__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                                </p>
-                            </figcaption>
-                        </div>
-                    </li>
-
-                <!-- ---- 3rd article - diagram icon ----- -->
-                    <li>
-                        <div class="article">
-                            <figure class="article__figure">
-                                <svg class="article__icon" 
-                                width="65" 
-                                height="70"
-                                >
-                                    <use href="./images/icons.svg#icon-diagram-1">
-                                    </use>
-                                </svg>
-                            </figure>
-                            <figcaption class="article__body">
-                                <h4 class="article__title">LOREM IPSUM</h4>
-                                <p class="article__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                                </p>
-                            </figcaption>
-                        </div>
-                    </li>
-
-                <!-- ---- 4th article - astronault icon ----- -->
-                    <li>
-                        <div class="article">
-                            <figure class="article__figure">
-                                <svg class="article__icon" 
-                                width="65" 
-                                height="70"
-                                >
-                                    <use href="./images/icons.svg#icon-astronaut-1">
-                                    </use>
-                                </svg>
-                            </figure>
-                            <figcaption class="article__body">
-                                <h4 class="article__title">LOREM IPSUM</h4>
-                                <p class="article__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                                </p>
-                            </figcaption>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section> 
-
-        <!-- -------------------------------------------------------- -->
-        <!-- ----- ACTIVITY SECTION - short gallery without description                -->
-        <!-- -------------------------------------------------------- -->
-
-        <section id="activity" class="section">
-            <div class="container">
-                <h2 class="section__header">Czym się zajmujemy</h2>
-                <ul class="gallery__list">
-                    <li>
-                        <figure class="gallery__item">
-                        <img src="images/mainpage-what-we-do-close-up-image-programer-working-his-desk-office_1098-18707.jpg" alt="programista pracujący w swoim biurze przy biurku."
-                        height="294"                    
-                        width="370"
-                        >
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="gallery__item">
-                        <img src="images/mainpage-what-we-do-web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg" alt="Web UI designers przy pracy, tworzy interfejs na urządznia mobilne"
-                        height="294"                    
-                        width="370"
-                        >
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="gallery__item">
-                        <img src="images/mainpage-what-we-do-creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg" alt="Projektant strony internetowej przy pracy, użwa tabletu graficznego."
-                        height="294"                    
-                        width="370"
-                        >
-                        </figure>
-                    </li>
-                </ul>
-            
+                <h1 class="entry-title">Effective Solutions<br>for Your Business</h1>
+                <button class="btn entry-section__btn" type="button">Order Service</button>
             </div>
         </section>
-
-        <!-- -------------------------------------------------------- -->
-        <!-- -----  section  - our team - background color dark white             ----- -->
-        <!-- -------------------------------------------------------- -->
-
-        <section class="section section--color-bg">
+        <!-- 2nd section - advantages articles -          -->
+        <section class="section">
             <div class="container">
-                <h2 class="section__header">Nasz zespół</h2>
-        
-                <!-- ----- team cards set - collection - ----- -->
-
-                <ul class="section__list team-card__set">
-                    
-                    <!-- team card - 1st item -->
-                    <li>
-                        <figure class="team-card">
-                            <img class="team-card__img" 
-                            src="images/mainpage-team-product-designer.jpg" alt="portret uśmiechniety pan w okularach" 
-                            width="270"
-                            height="260" 
-                            >
-                            <figcaption class="team-card__body">
-                                <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">Product Designer</p>
-
-                                <!-- social media - icons list -->
-                                <ul class="team-card__icons-list">
-                                    
-                                    <!-- social media - 1st icon -insta-->
-                                    <li>
-                                        <a class="team-card__icon-bg link " href="#product-designer-instagram-link" > 
-                                            
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-instagram"></use>
-                                            </svg>
-                                            
-                                        </a>
-                                    </li>
-
-                                <!-- social media - 2nd icon -twitter -->    
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#product-designer-twitter-link" > 
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    
-                                <!-- social media - 3rd icon - facebook -->
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#product-designer-facebook-link" > 
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-
-                                <!-- social media - 4th icon - linkedIn -->  
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#product-designer-linkedin-link" > 
-                                            <svg class=".team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                        </figcaption>
-                        </figure>
+                <h2 class="section__heading visually-hidden">advantage</h2>
+                <ul class="section__items">
+                    <li class="article">
+                        <h3 class="article__heading">Strategy</h3>
+                        <p class="section__text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>        
                     </li>
-
-                    <!-- team card - 2nd item - Frontend Developer -->
-                    <li>
-                        <figure class="team-card">
-                            <img class="team-card__img"
-                            src="images/mainpage-team-frontend-developer.jpg" alt="portret uśmiechnieta pani w okularach"
-                            width="270" 
-                            height="260"
-                            >
-                            <figcaption class="team-card__body">
-                                <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">Frontend Developer</p>
-
-                                <!-- social media - icons list -->
-                                <ul class="team-card__icons-list">
-                                    
-                                    <!-- social media - 1st icon -insta-->
-                                    <li>
-                                        <a class="team-card__icon-bg link " href="#frontend-developer-instagram-link" > 
-                                            
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-instagram"></use>
-                                            </svg>
-                                            
-                                        </a>
-                                    </li>
-
-                                <!-- social media - 2nd icon -twitter -->    
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#frontend-developer-twitter-link" > 
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    
-                                <!-- social media - 3rd icon - facebook -->
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#frontend-developer-facebook-link" > 
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-
-                                <!-- social media - 4th icon - linkedIn -->  
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#frontend-developer-linkedin-link" > 
-                                            <svg class=".team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                        </figcaption>
-                        </figure>
+                    <li class="article">
+                        <h3 class="article__heading">Punctuality</h3>
+                        <p class="section__text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>        
                     </li>
-
-                    <!-- team card - 3rd item - Marketing - -->
-                    <li>
-                        <figure class="team-card">
-                            <img class="team-card__img"
-                            src="images/mainpage-team-marketing.jpg" 
-                            alt="portret uśmiechniety pan " 
-                            width="270" 
-                            height="260"
-                            >
-                            <figcaption class="team-card__body">
-                                <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">Marketing</p>
-
-                                <!-- social media - icons list -->
-                                <ul class="team-card__icons-list">
-                                    
-                                    <!-- social media - 1st icon -insta-->
-                                    <li>
-                                        <a class="team-card__icon-bg link " href="#marketing-instagram-link" > 
-                                            
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-instagram"></use>
-                                            </svg>
-                                            
-                                        </a>
-                                    </li>
-
-                                <!-- social media - 2nd icon -twitter -->    
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#marketing-twitter-link" > 
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    
-                                <!-- social media - 3rd icon - facebook -->
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#marketing-facebook-link" > 
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-
-                                <!-- social media - 4th icon - linkedIn -->  
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#marketing-linkedin-link" > 
-                                            <svg class=".team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                        </figcaption>
-                        </figure>
+                    <li class="article">
+                        <h3 class="article__heading">Diligence</h3>
+                        <p class="section__text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>        
                     </li>
-
-                    <!-- team card - 4th item - UI Designer -->
-                    <li>
-                        <figure class="team-card">
-                            <img 
-                            src="images/mainpage-team-ui-designer.jpg" alt="portret uśmiechniety pan w okularach na tle budynków" 
-                            width="270"
-                            height="260"
-                            >
-                            <figcaption class="team-card__body">
-                                <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">UI Designer</p>
-                                
-                                <!-- social media - icons list -->
-                                <ul class="team-card__icons-list">
-                                    
-                                    <!-- social media - 1st icon -insta-->
-                                    <li>
-                                        <a class="team-card__icon-bg link " href="#ui-designer-instagram-link" > 
-                                            
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-instagram"></use>
-                                            </svg>
-                                            
-                                        </a>
-                                    </li>
-
-                                <!-- social media - 2nd icon -twitter -->    
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#ui-designer-twitter-link" > 
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    
-                                <!-- social media - 3rd icon - facebook -->
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#ui-designer-facebook-link" > 
-                                            <svg class="team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-
-                                <!-- social media - 4th icon - linkedIn -->  
-                                    <li>
-                                        <a class="team-card__icon-bg link" href="#ui-designer-linkedin-link" > 
-                                            <svg class=".team-card__icon" 
-                                            width="20" height="20">
-                                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                        </figcaption>
-                        </figure>
+                    <li class="article">
+                        <h3 class="article__heading">Technologies</h3>
+                        <p class="section__text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>        
                     </li>
                 </ul>
             </div>
         </section>
-
-    <!-- ----- ------------------ ------------------------------ -->    
-    <!-- ----- OUR CLIENTS SECTION ----------------- -->
-    <!-- nested icons, links without description------------------------------ -->
-
-        <section id="our-client" class="section">
+        <!--     -->
+        <!-- 3rd section - Our team : change background color (darker white) team-->
+        <section class="section bg-light">
             <div class="container">
-                <h2 class="section__header">Nasi klienci</h2>
-                <ul class="section__list client__list">
-                    
-                <!-- ----- 1st client icon----- -->
-                    <li>
-                        <a class="link client__item" href="#client.html">
-                            <svg class="client__icon" width="170" height="92">
-                                <use href="./images/icons.svg#icon-client1-yaco-company"></use>
-                            </svg>
-                        </a>
+                <h2 class="section__heading">Our Team</h2>
+                <ul class="section__items section__items--gap">
+                    <li class="card">
+                        <img src="./images/mark-guerrero-product-designer.jpg" alt="uśmiechnięty mężczyzna z brodą"     width="264">
+                        <div class="card__wrapper">
+                            <h3 class="card__c-heading">Mark Guerrero</h3>
+                            <p class="body-text text-align-center">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img src="./images/tom-ford-fronted-developer.jpg" alt="zdjęcie mężczyzny"           
+                            width="264">
+                        <div class="card__wrapper">
+                            <h3 class="card__c-heading">Tom Ford</h3>
+                            <p class="body-text text-align-center">Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img src="./images/camila-garcia-marketing.jpg" alt="zdjęcie kobiety"          
+                        width="264">
+                        <div class="card__wrapper">
+                            <h3 class="card__c-heading">Camila Garcia</h3>
+                            <p class="body-text text-align-center">Marketing</p>
+                        </div>    
+                    </li>
+                    <li class="card">
+                        <img src="./images/daniel-wilson-ui-designer.jpg" alt="zdjęcie okienek z aplikacji bankowej"
+                        width="264">
+                        <div class="card__wrapper">
+                            <h3 class="card__c-heading">Daniel Wilson</h3>
+                            <p class="body-text text-align-center">UI Designer</p>
+                        </div>
                     </li>
 
-                <!-- ----- 2nd client icon----- -->
-                    <li>
-                        <a class="link client__item" href="#client.html">
-                            <svg class="client__icon" width="170" height="92">
-                                <use href="./images/icons.svg#icon-client2-tagline1-company"></use>
-                            </svg>
-                        </a>
+                </ul>
+            </div>    
+        </section>
+        <!-- 4th section - Our Portfolio - cards colection-->
+        <section class="section background--white">
+            <div class="container">
+                <h2 class="section__heading">Our Portfolio</h2>
+                <ul class="section__items section__items--gap">
+                    <li class="card card__portfolio">
+                        <img src="./images/portfolio_project_banking_app.jpg" alt="zdjęcie mężczyzny"           
+                        width="360">
+                        <div class="card__border-wrapper"> 
+                            <h3 class="card__l-heading">Banking App</h3>
+                            <p class="body-text">App</p>
+                        </div>
                     </li>
-
-                <!-- ----- 3rd client icon----- -->
-                    <li>
-                        <a class="link client__item" href="#client.html">
-                            <svg class="client__icon" width="170" height="92">
-                                <use href="./images/icons.svg#icon-client3-company-company"></use>
-                            </svg>
-                        </a>
+                    <li class="card card__portfolio">
+                        <img src="./images/portfolio_project_Cashless_Payment.jpg" alt="zdjęcie wykonywanie płatności telefonem"           
+                        width="360">
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Cashless Payment</h3>
+                            <p class="body-text">Marketing</p>
+                        </div>
                     </li>
-
-                <!-- ----- 4th client icon----- -->
-                    <li>
-                        <a class="link client__item" href="#client.html">
-                            <svg class="client__icon" width="170" height="92">
-                                <use href="./images/icons.svg#icon-client4-foster-peters-company"></use>
-                            </svg>
-                        </a>
+                    <li class="card card__portfolio">
+                        <img src="./images/portfolio_project_meditation-app.jpg" alt="zdjęcie laptop i smartfon z identycznym orazem na ekranie"           
+                        width="360">
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Meditation App</h3>
+                            <p class="body-text">App</p>
+                        </div>
                     </li>
-
-                <!-- ----- 5th client icon----- -->
-                    <li>
-                        <a class="link client__item" href="#client.html">
-                            <svg class="client__icon" width="170" height="92">
-                                <use href="./images/icons.svg#icon-client5-brand-company"></use>
-                            </svg>
-                        </a>
+                    <li class="card card__portfolio">
+                        <img src="./images/portfolio_project_taxi_service.jpg" alt="wnętrze samochodu, miejsce kierowcy z uruchomioną aplikacją na telefonie"           
+                        width="360">
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Taxi Service</h3>
+                            <p class="body-text">Marketing</p>
+                        </div>
                     </li>
-
-                <!-- ----- 6th client icon----- -->
-                    <li>
-                        <a class="link client__item" href="#client.html">
-                            <svg class="client__icon" width="170" height="92">
-                                <use href="./images/icons.svg#icon-client6-tagline-company"></use>
-                            </svg>
-                        </a>   
+                    <li class="card card__portfolio">
+                        <img src="./images//portfolio_project_Screen_Illustrations.jpg" alt="Smartfon z aplikacją i przykładowymi oknami aplikacji"           
+                        width="360">
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Screen Illustrations</h3>
+                            <p class="body-text">Design</p>
+                        </div>
+                    </li>
+                    <li class="card card__portfolio">
+                        <img src="./images//portfolio_project_online_courses.jpg" alt="kobieta korzystająca ze smartfona"           
+                        width="360">
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Online Courses</h3>
+                            <p class="body-text">Marketing</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
 
-<!-- ----- ----- --------- ----- ----- -->        
-    <!-- ----- ----- FOOTER SECTION ----- ----- -->
-    <!-- ----- cont. logo + address box / social media icons ----- -->
-    <!-- ----- ----- --------- ----- ----- -->
-
-    <footer class="section__footer">
-        <div class="container footer">
-            
-            <!-- 1st footer item - box cont. logo + address box -->
-            <div class="footer__item">
-                <div class="logo">
-                    <a class="link" href="./index.html">
-                        <span class="logo__logotype logo__logotype--brand-color">Web</span>
-                        <span class="logo__logotype logo__logotype--on-dark-bg">Studio</span>
-                    </a>        
-                </div>
-                <address class="address__box">
-                    <p> m. Warszawa, Aleje Jerozolimskie 21 </p>
-                    <p><a class="link address__link--color" href="mailto:info@example.com">info@example.com</a></p>
-                    <p><a class="link address__link--color" href="tel:+48111111111">+48 111 111 111</a></p>
-                </address>
-            </div> 
-
-    <!-- ----- ----- --------- ----- ----- -->        
-        <!-- ----- ----- FOOTER SECTION ----- ----- -->
-            <!-- 2nd footer item - cont. label + social media icons list  -->
-
-            <div class="footer__item"> 
-
-                <h3 class="footer__label" >DOŁĄCZ DO NAS
-                </h3>
-                <ul class="footer__icons-list">
-                                                    
-                    <!-- social media - 1st icon -insta-->
-                    <li>
-                        <a class="footer__icon-bg link " href="#instagram-link" > 
-                            
-                            <svg class="footer__icon" 
-                            width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                            
-                        </a>
-                    </li>   
-
-                    <!-- social media - 2nd icon -twitter -->    
-                        <li>
-                            <a class="footer__icon-bg link" href="#twitter-link" > 
-                                <svg class="footer__icon" 
-                                width="20" height="20">
-                                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        
-                    <!-- social media - 3rd icon - facebook -->
-                        <li>
-                            <a class="footer__icon-bg link" href="#facebook-link" > 
-                                <svg class="footer__icon" 
-                                width="20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-
-                    <!-- social media - 4th icon - linkedIn -->  
-                        <li>
-                            <a class="footer__icon-bg link" href="#footerlinkedin-link" > 
-                                <svg class=".footer__icon" 
-                                width="20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                </ul>
-
-            </div>
+    <footer class="footer">
+        <div class="container">
+            <a class="logo footer__logo link" href="./index.html">Web<span class="logo--light-theme">Studio</span>
+            </a>
+            <p class="footer__text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p> 
         </div>
     </footer>
+
     </body>
