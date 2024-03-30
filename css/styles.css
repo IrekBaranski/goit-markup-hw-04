@@ -11,6 +11,22 @@ body {
     /* body typography */   
     font-family: 'Roboto', sans-serif;
     color: #434455; /* slate var(--primary-text);*/
+
+    /*WebStudio page colors from Style Guide */
+    --iris-color: #4d5ae5; /* Primary Brand :CTA's  */
+    --ocean-color: #404bbf; /* Pressed state :CTA's, Focused/Active states links*/
+    --navy-blue: #2E2F42; /* Dark :Overlays, Shadows, Headings */
+    --green: #31D0AA; /* Success :Valid fields, Success messages*/
+    --slate: #434455; /* Text : Body text */
+    --light-slate: #8E8F99; /* Subtitle text :Helper text, Deemphasized text*/
+    --cornflower: #E7E9FC; /* Accent: Accent color, Hairlines Subtle backgrounds*/
+    --cloud: #F4F4FD; /* Light: Light mode backgrounds, Light mode Dialogs/alerts*/
+    --navy-blue-modal: #F4F4FD; /* MOdal Overlay: overlay*/
+    --grey: rgba(46, 47, 66, 40);
+
+
+
+    
     background-color: #FFFFFF; /*var(--white-bg); */
 }
 h1, 
@@ -295,6 +311,17 @@ nav {
     /*calc: column=n gap=x, calc=((100% - (n-1)x)/n) - to można przez stałe zapisać ... */
     max-width: calc((100% - 72px)/4);
 }
+
+.article__img {
+    background-color: var(--cloud);
+    border-radius: 4px;
+    border: 1px solid var(--light-slate);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+}
 .article__heading {
     font-weight: 500;
     font-size: 20px;
@@ -315,17 +342,6 @@ nav {
     
     /* test color*/
     background-color: greenyellow;
-}
-/* poprawić icony */
-.first-section-icon-box {
-    background-color: yellow;
-    border-radius: 4px;
-    border: 1px solid red;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
 }
 
 /* 3rd section "Our Team" cards: bg cloud, display flex: 4 cards in row */
