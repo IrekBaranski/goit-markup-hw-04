@@ -22,12 +22,9 @@ body {
     --cornflower: #E7E9FC; /* Accent: Accent color, Hairlines Subtle backgrounds*/
     --cloud: #F4F4FD; /* Light: Light mode backgrounds, Light mode Dialogs/alerts*/
     --navy-blue-modal: #F4F4FD; /* MOdal Overlay: overlay*/
-    --grey: rgba(46, 47, 66, 40);
-
-
-
-    
-    background-color: #FFFFFF; /*var(--white-bg); */
+    --grey: #2e2f4266;
+    --white: #FFFFFF;
+    background-color: var(--white); /*var(--white-bg); */
 }
 h1, 
 h2, 
@@ -79,8 +76,8 @@ img {display: block;}
     justify-content: space-between;
     align-items: center;
 
-    /* test */
-    background-color: aqua;
+    /* test
+    background-color: aqua; */
 }
 /* */
 
@@ -135,8 +132,8 @@ nav {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* test color */
-    background-color: burlywood;
+    /* test color 
+    background-color: burlywood; */
 }
 .menu__item:focus,
 .menu__item:hover {
@@ -340,8 +337,8 @@ nav {
     line-height: 1.5;
     letter-spacing: 0.02em;
     
-    /* test color*/
-    background-color: greenyellow;
+    /* test color 
+    background-color: greenyellow; */
 }
 
 /* 3rd section "Our Team" cards: bg cloud, display flex: 4 cards in row */
@@ -359,8 +356,8 @@ nav {
 }
 .card__wrapper {
     padding: 32px 0px;
-    padding-left: 16px;
-    padding-right: 16px;
+    /*padding-left: 16px;
+    padding-right: 16px;*/
 }
 .card__c-heading {
     text-align: center;
@@ -372,13 +369,13 @@ nav {
     color: #2E2F42; /* var(--main-color);*/
     margin-bottom: 8px;
 
-    /* test color */
-    background-color: green;
+    /* test color 
+    background-color: green; */
 }
 .social-media-links{
     display: flex;
-    /*gap: 24px;*/
-    justify-content: space-between;
+    gap: 24px;
+    justify-content: center;
     margin-top: 8px;
 }
 .social-media-links__item {
@@ -457,8 +454,8 @@ nav {
     border: 1px solid var(--cornflower);
     border-top: none;
 
-    /* test color */
-    background-color: brown;
+    /* test color 
+    background-color: brown;*/
 }
 
 .card__l-heading {
@@ -471,8 +468,8 @@ nav {
     color: #2E2F42; /* var(--main-color);*/
     margin-bottom: 8px;
 
-    /* test color */
-    background-color:royalblue;
+    /* test color 
+    background-color:royalblue;*/
 }
 /* footer styles: bg dark, text light */
 .footer{
@@ -499,10 +496,11 @@ nav {
     color: var(--cloud); /*var(--light-mode-bg) */
 }
 .footer__heading {
-    color: white;
+    color: var(--white);
     font-weight: 500;
     line-height: 1.5;
     font-size: 16px;
+    letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
 .social-media-links__footer {
